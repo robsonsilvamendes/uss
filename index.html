@@ -468,19 +468,19 @@ footer a:hover{color:var(--accent);}
     <div class="ctrl-l" style="margin-top:6px;">Puppini Bridge resultante para 3 pedidos reais do Northwind (linhas empilhadas via UNION, nunca combinadas via JOIN)</div>
     <div style="overflow-x:auto;">
     <table class="bridge-table">
-      <thead><tr><th>_KEY_Order</th><th>_KEY_OrderDetail</th><th>Stage</th><th>Freight</th><th>Produto</th></tr></thead>
+      <thead><tr><th>Stage</th><th>_KEY_Order</th><th>_KEY_OrderDetail</th><th>Freight</th><th>Produto</th></tr></thead>
       <tbody>
-        <tr><td>10248</td><td class="dash">—</td><td class="stage-sales">Orders</td><td>32.38</td><td class="dash">—</td></tr>
-        <tr><td>10249</td><td class="dash">—</td><td class="stage-sales">Orders</td><td>11.61</td><td class="dash">—</td></tr>
-        <tr><td>10250</td><td class="dash">—</td><td class="stage-sales">Orders</td><td>65.83</td><td class="dash">—</td></tr>
-        <tr><td>10248</td><td>10248-11</td><td class="stage-returns">OrderDetails</td><td class="dash">—</td><td>Queso Cabrales</td></tr>
-        <tr><td>10248</td><td>10248-42</td><td class="stage-returns">OrderDetails</td><td class="dash">—</td><td>Singaporean Hokkien Fried Mee</td></tr>
-        <tr><td>10248</td><td>10248-72</td><td class="stage-returns">OrderDetails</td><td class="dash">—</td><td>Mozzarella di Giovanni</td></tr>
-        <tr><td>10249</td><td>10249-14</td><td class="stage-returns">OrderDetails</td><td class="dash">—</td><td>Tofu</td></tr>
-        <tr><td>10249</td><td>10249-51</td><td class="stage-returns">OrderDetails</td><td class="dash">—</td><td>Manjimup Dried Apples</td></tr>
-        <tr><td>10250</td><td>10250-41</td><td class="stage-returns">OrderDetails</td><td class="dash">—</td><td>Jack's New England Clam Chowder</td></tr>
-        <tr><td>10250</td><td>10250-51</td><td class="stage-returns">OrderDetails</td><td class="dash">—</td><td>Manjimup Dried Apples</td></tr>
-        <tr><td>10250</td><td>10250-65</td><td class="stage-returns">OrderDetails</td><td class="dash">—</td><td>Louisiana Fiery Hot Pepper Sauce</td></tr>
+        <tr><td class="stage-sales">Orders</td><td>10248</td><td class="dash">—</td><td>32.38</td><td class="dash">—</td></tr>
+        <tr><td class="stage-sales">Orders</td><td>10249</td><td class="dash">—</td><td>11.61</td><td class="dash">—</td></tr>
+        <tr><td class="stage-sales">Orders</td><td>10250</td><td class="dash">—</td><td>65.83</td><td class="dash">—</td></tr>
+        <tr><td class="stage-returns">OrderDetails</td><td>10248</td><td>10248-11</td><td class="dash">—</td><td>Queso Cabrales</td></tr>
+        <tr><td class="stage-returns">OrderDetails</td><td>10248</td><td>10248-42</td><td class="dash">—</td><td>Singaporean Hokkien Fried Mee</td></tr>
+        <tr><td class="stage-returns">OrderDetails</td><td>10248</td><td>10248-72</td><td class="dash">—</td><td>Mozzarella di Giovanni</td></tr>
+        <tr><td class="stage-returns">OrderDetails</td><td>10249</td><td>10249-14</td><td class="dash">—</td><td>Tofu</td></tr>
+        <tr><td class="stage-returns">OrderDetails</td><td>10249</td><td>10249-51</td><td class="dash">—</td><td>Manjimup Dried Apples</td></tr>
+        <tr><td class="stage-returns">OrderDetails</td><td>10250</td><td>10250-41</td><td class="dash">—</td><td>Jack's New England Clam Chowder</td></tr>
+        <tr><td class="stage-returns">OrderDetails</td><td>10250</td><td>10250-51</td><td class="dash">—</td><td>Manjimup Dried Apples</td></tr>
+        <tr><td class="stage-returns">OrderDetails</td><td>10250</td><td>10250-65</td><td class="dash">—</td><td>Louisiana Fiery Hot Pepper Sauce</td></tr>
       </tbody>
     </table>
     </div>
@@ -733,25 +733,25 @@ footer a:hover{color:var(--accent);}
     <div class="ctrl-l" style="margin-top:6px;">A Puppini Bridge completa do Northwind — 3 pedidos, 3 clientes e 3 funcionários, três Stages diferentes empilhados via UNION</div>
     <div style="overflow-x:auto;">
     <table class="bridge-table">
-      <thead><tr><th>_KEY_Order</th><th>_KEY_OrderDetail</th><th>_KEY_Employee</th><th>_KEY_Customer</th><th>_KEY_Territory</th><th>Stage</th><th>Freight</th><th>LineTotal</th></tr></thead>
+      <thead><tr><th>Stage</th><th>_KEY_Order</th><th>_KEY_OrderDetail</th><th>_KEY_Employee</th><th>_KEY_Customer</th><th>_KEY_Territory</th><th>Freight</th><th>LineTotal</th></tr></thead>
       <tbody>
-        <tr><td>10248</td><td class="dash">—</td><td>5</td><td>VINET</td><td class="dash">—</td><td class="stage-sales">Orders</td><td>32.38</td><td class="dash">—</td></tr>
-        <tr><td>10249</td><td class="dash">—</td><td>6</td><td>TOMSP</td><td class="dash">—</td><td class="stage-sales">Orders</td><td>11.61</td><td class="dash">—</td></tr>
-        <tr><td>10250</td><td class="dash">—</td><td>4</td><td>HANAR</td><td class="dash">—</td><td class="stage-sales">Orders</td><td>65.83</td><td class="dash">—</td></tr>
-        <tr><td>10248</td><td>10248-11</td><td class="dash">—</td><td>VINET</td><td class="dash">—</td><td class="stage-returns">OrderDetails</td><td class="dash">—</td><td>168.00</td></tr>
-        <tr><td>10248</td><td>10248-42</td><td class="dash">—</td><td>VINET</td><td class="dash">—</td><td class="stage-returns">OrderDetails</td><td class="dash">—</td><td>98.00</td></tr>
-        <tr><td>10248</td><td>10248-72</td><td class="dash">—</td><td>VINET</td><td class="dash">—</td><td class="stage-returns">OrderDetails</td><td class="dash">—</td><td>174.00</td></tr>
-        <tr><td>10249</td><td>10249-14</td><td class="dash">—</td><td>TOMSP</td><td class="dash">—</td><td class="stage-returns">OrderDetails</td><td class="dash">—</td><td>167.40</td></tr>
-        <tr><td>10249</td><td>10249-51</td><td class="dash">—</td><td>TOMSP</td><td class="dash">—</td><td class="stage-returns">OrderDetails</td><td class="dash">—</td><td>1696.00</td></tr>
-        <tr><td>10250</td><td>10250-41</td><td class="dash">—</td><td>HANAR</td><td class="dash">—</td><td class="stage-returns">OrderDetails</td><td class="dash">—</td><td>77.00</td></tr>
-        <tr><td>10250</td><td>10250-51</td><td class="dash">—</td><td>HANAR</td><td class="dash">—</td><td class="stage-returns">OrderDetails</td><td class="dash">—</td><td>1484.00</td></tr>
-        <tr><td>10250</td><td>10250-65</td><td class="dash">—</td><td>HANAR</td><td class="dash">—</td><td class="stage-returns">OrderDetails</td><td class="dash">—</td><td>252.00</td></tr>
-        <tr><td class="dash">—</td><td class="dash">—</td><td>5</td><td class="dash">—</td><td>60179</td><td class="stage-sales">EmployeeTerritory</td><td class="dash">—</td><td class="dash">—</td></tr>
-        <tr><td class="dash">—</td><td class="dash">—</td><td>5</td><td class="dash">—</td><td>30346</td><td class="stage-sales">EmployeeTerritory</td><td class="dash">—</td><td class="dash">—</td></tr>
-        <tr><td class="dash">—</td><td class="dash">—</td><td>5</td><td class="dash">—</td><td>31406</td><td class="stage-sales">EmployeeTerritory</td><td class="dash">—</td><td class="dash">—</td></tr>
-        <tr><td class="dash">—</td><td class="dash">—</td><td>6</td><td class="dash">—</td><td>02116</td><td class="stage-sales">EmployeeTerritory</td><td class="dash">—</td><td class="dash">—</td></tr>
-        <tr><td class="dash">—</td><td class="dash">—</td><td>4</td><td class="dash">—</td><td>19713</td><td class="stage-sales">EmployeeTerritory</td><td class="dash">—</td><td class="dash">—</td></tr>
-        <tr><td class="dash">—</td><td class="dash">—</td><td>4</td><td class="dash">—</td><td>55113</td><td class="stage-sales">EmployeeTerritory</td><td class="dash">—</td><td class="dash">—</td></tr>
+        <tr><td class="stage-sales">Orders</td><td>10248</td><td class="dash">—</td><td>5</td><td>VINET</td><td class="dash">—</td><td>32.38</td><td class="dash">—</td></tr>
+        <tr><td class="stage-sales">Orders</td><td>10249</td><td class="dash">—</td><td>6</td><td>TOMSP</td><td class="dash">—</td><td>11.61</td><td class="dash">—</td></tr>
+        <tr><td class="stage-sales">Orders</td><td>10250</td><td class="dash">—</td><td>4</td><td>HANAR</td><td class="dash">—</td><td>65.83</td><td class="dash">—</td></tr>
+        <tr><td class="stage-returns">OrderDetails</td><td>10248</td><td>10248-11</td><td class="dash">—</td><td>VINET</td><td class="dash">—</td><td class="dash">—</td><td>168.00</td></tr>
+        <tr><td class="stage-returns">OrderDetails</td><td>10248</td><td>10248-42</td><td class="dash">—</td><td>VINET</td><td class="dash">—</td><td class="dash">—</td><td>98.00</td></tr>
+        <tr><td class="stage-returns">OrderDetails</td><td>10248</td><td>10248-72</td><td class="dash">—</td><td>VINET</td><td class="dash">—</td><td class="dash">—</td><td>174.00</td></tr>
+        <tr><td class="stage-returns">OrderDetails</td><td>10249</td><td>10249-14</td><td class="dash">—</td><td>TOMSP</td><td class="dash">—</td><td class="dash">—</td><td>167.40</td></tr>
+        <tr><td class="stage-returns">OrderDetails</td><td>10249</td><td>10249-51</td><td class="dash">—</td><td>TOMSP</td><td class="dash">—</td><td class="dash">—</td><td>1696.00</td></tr>
+        <tr><td class="stage-returns">OrderDetails</td><td>10250</td><td>10250-41</td><td class="dash">—</td><td>HANAR</td><td class="dash">—</td><td class="dash">—</td><td>77.00</td></tr>
+        <tr><td class="stage-returns">OrderDetails</td><td>10250</td><td>10250-51</td><td class="dash">—</td><td>HANAR</td><td class="dash">—</td><td class="dash">—</td><td>1484.00</td></tr>
+        <tr><td class="stage-returns">OrderDetails</td><td>10250</td><td>10250-65</td><td class="dash">—</td><td>HANAR</td><td class="dash">—</td><td class="dash">—</td><td>252.00</td></tr>
+        <tr><td class="stage-sales">EmployeeTerritory</td><td class="dash">—</td><td class="dash">—</td><td>5</td><td class="dash">—</td><td>60179</td><td class="dash">—</td><td class="dash">—</td></tr>
+        <tr><td class="stage-sales">EmployeeTerritory</td><td class="dash">—</td><td class="dash">—</td><td>5</td><td class="dash">—</td><td>30346</td><td class="dash">—</td><td class="dash">—</td></tr>
+        <tr><td class="stage-sales">EmployeeTerritory</td><td class="dash">—</td><td class="dash">—</td><td>5</td><td class="dash">—</td><td>31406</td><td class="dash">—</td><td class="dash">—</td></tr>
+        <tr><td class="stage-sales">EmployeeTerritory</td><td class="dash">—</td><td class="dash">—</td><td>6</td><td class="dash">—</td><td>02116</td><td class="dash">—</td><td class="dash">—</td></tr>
+        <tr><td class="stage-sales">EmployeeTerritory</td><td class="dash">—</td><td class="dash">—</td><td>4</td><td class="dash">—</td><td>19713</td><td class="dash">—</td><td class="dash">—</td></tr>
+        <tr><td class="stage-sales">EmployeeTerritory</td><td class="dash">—</td><td class="dash">—</td><td>4</td><td class="dash">—</td><td>55113</td><td class="dash">—</td><td class="dash">—</td></tr>
       </tbody>
     </table>
     </div>
@@ -808,8 +808,30 @@ footer a:hover{color:var(--accent);}
       <p>Frete (medida de <code>Orders</code>), receita de produtos (medida de <code>Order Details</code>) e contagem de territórios (relacionamento de <code>EmployeeTerritories</code>, decorado com nomes via <code>Territories</code>) — três granularidades e três tabelas de fato diferentes, respondidas numa <strong>única consulta</strong>, sem um único <code>DISTINCT</code> de emergência ou subconsulta corretiva para "consertar" a duplicação depois do fato. <code>Employees</code> e <code>Customers</code> entram como dimensões que decoram o resultado — exatamente como a filosofia do USS prevê: tudo se conecta pela Bridge, e cada dimensão só entra para dar nome legível a uma chave.</p>
     </div>
 
+    <div class="ctrl-l" style="margin-top:18px;">📦 Outro exemplo, agora no grão do pedido: frete + itens + receita, numa única passada pela Bridge</div>
+    <p class="section-desc">Trocando o agrupamento de <code>_KEY_Employee</code> para <code>_KEY_Order</code>, a mesma Bridge responde no grão do pedido — e a coluna <code>itens</code> abaixo é literalmente o número de linhas de <code>Order Details</code> que causaria a duplicação do frete se alguém ainda juntasse <code>Orders</code> com <code>Order Details</code> via JOIN direto (seção 🕸️ Fan Trap).</p>
+    <div class="code-block">
+<span class="code-lang">sql</span><span class="copy-btn" onclick="copyCode(this)">copiar</span><span class="kw">SELECT</span> b._KEY_Order,
+       <span class="fn">SUM</span>(<span class="kw">CASE WHEN</span> b.Stage<span class="kw">=</span><span class="st">'Orders'</span>       <span class="kw">THEN</span> b.freight    <span class="kw">END</span>) <span class="kw">AS</span> frete,
+       <span class="fn">COUNT</span>(<span class="kw">CASE WHEN</span> b.Stage<span class="kw">=</span><span class="st">'OrderDetails'</span> <span class="kw">THEN</span> <span class="num">1</span>          <span class="kw">END</span>) <span class="kw">AS</span> itens,
+       <span class="fn">SUM</span>(<span class="kw">CASE WHEN</span> b.Stage<span class="kw">=</span><span class="st">'OrderDetails'</span> <span class="kw">THEN</span> b.line_total <span class="kw">END</span>) <span class="kw">AS</span> receita
+<span class="kw">FROM</span> puppini_bridge_northwind b
+<span class="kw">GROUP BY</span> b._KEY_Order;
+<span class="cm">-- mesma bridge, agrupada por _KEY_Order em vez de _KEY_Employee — nem precisa de JOIN a uma dimensão</span></div>
+    <table class="data-table">
+      <thead><tr><th>Pedido</th><th>Frete</th><th>Itens (Order Details)</th><th>Receita</th></tr></thead>
+      <tbody>
+        <tr><td>10248</td><td>R$ 32,38</td><td>3</td><td>R$ 440,00</td></tr>
+        <tr><td>10249</td><td>R$ 11,61</td><td>2</td><td>R$ 1.863,40</td></tr>
+        <tr><td>10250</td><td>R$ 65,83</td><td>3</td><td>R$ 1.813,00</td></tr>
+      </tbody>
+    </table>
+    <div class="info-box">
+      <p>💡 Repare que essa consulta nem precisou de <code>JOIN</code> a nenhuma dimensão — <code>_KEY_Order</code> já é a própria chave da Bridge. É o exemplo mais simples possível do padrão: qualquer grão que já exista na Bridge (pedido, funcionário, cliente) vira uma consulta só de agregação condicional, sem tocar em nenhuma tabela de fato diretamente.</p>
+    </div>
+
     <div class="ctrl-l" style="margin-top:18px;">🔄 Mesma Bridge, outro corte: e se a pergunta fosse por categoria de produto, não por funcionário?</div>
-    <p class="section-desc">Essa é a prova real de flexibilidade do USS: a <strong>mesma</strong> Puppini Bridge construída acima responde a uma pergunta totalmente diferente — sem adicionar uma única tabela nova, só trocando o JOIN de dimensão auxiliar (Products → Categories) por cima do <code>Stage="OrderDetails"</code>.</p>
+    <p class="section-desc">Essa é a prova real de flexibilidade do USS: a <strong>mesma</strong> Puppini Bridge construída acima responde a uma pergunta totalmente diferente — sem adicionar uma única tabela nova, só trocando o JOIN de dimensão auxiliar (Products → Categories) por cima do <code>Stage="OrderDetails"</code>. E, como no exemplo por funcionário, dá pra combinar mais de um sinal na mesma passada: receita, produtos distintos vendidos e o ticket médio entre eles.</p>
     <table class="data-table" style="margin-bottom:10px;">
       <thead><tr><th>Produto (em Order Details)</th><th>Categoria</th></tr></thead>
       <tbody>
@@ -824,15 +846,26 @@ footer a:hover{color:var(--accent);}
     </table>
     <div class="code-block">
 <span class="code-lang">sql</span><span class="copy-btn" onclick="copyCode(this)">copiar</span><span class="kw">SELECT</span> cat.category_name,
-       <span class="fn">SUM</span>(<span class="kw">CASE WHEN</span> b.Stage<span class="kw">=</span><span class="st">'OrderDetails'</span> <span class="kw">THEN</span> b.line_total <span class="kw">END</span>) <span class="kw">AS</span> receita
+       <span class="fn">SUM</span>(<span class="kw">CASE WHEN</span> b.Stage<span class="kw">=</span><span class="st">'OrderDetails'</span> <span class="kw">THEN</span> b.line_total <span class="kw">END</span>) <span class="kw">AS</span> receita,
+       <span class="fn">COUNT</span>(<span class="kw">DISTINCT CASE WHEN</span> b.Stage<span class="kw">=</span><span class="st">'OrderDetails'</span> <span class="kw">THEN</span> b.product_id <span class="kw">END</span>) <span class="kw">AS</span> produtos_distintos
 <span class="kw">FROM</span> puppini_bridge_northwind b
 <span class="kw">JOIN</span> products   p   <span class="kw">ON</span> p.product_id  <span class="kw">=</span> b.product_id
 <span class="kw">JOIN</span> categories cat <span class="kw">ON</span> cat.category_id <span class="kw">=</span> p.category_id
 <span class="kw">GROUP BY</span> cat.category_name;
 <span class="cm">-- mesma bridge da consulta anterior — só o JOIN de dimensão auxiliar mudou</span></div>
+    <table class="data-table">
+      <thead><tr><th>Categoria</th><th>Receita</th><th>Produtos Distintos</th><th>Ticket Médio por Produto</th></tr></thead>
+      <tbody>
+        <tr><td>Produce</td><td>R$ 3.347,40</td><td>2</td><td>R$ 1.673,70</td></tr>
+        <tr><td>Dairy Products</td><td>R$ 342,00</td><td>2</td><td>R$ 171,00</td></tr>
+        <tr><td>Condiments</td><td>R$ 252,00</td><td>1</td><td>R$ 252,00</td></tr>
+        <tr><td>Grains/Cereals</td><td>R$ 98,00</td><td>1</td><td>R$ 98,00</td></tr>
+        <tr><td>Seafood</td><td>R$ 77,00</td><td>1</td><td>R$ 77,00</td></tr>
+      </tbody>
+    </table>
     <div class="canvas-wrap"><canvas id="categoryRevenueChart" height="200"></canvas></div>
     <div class="info-box">
-      <p>💡 Nenhum dos dois traps aparece aqui: <code>Products → Categories</code> é uma relação N:1 comum (cada produto tem uma única categoria), então esse JOIN de dimensão não arrisca nada — o cuidado com <code>Stage</code> continua sendo o que protege exclusivamente a medida <code>line_total</code>, vinda da tabela que realmente explode (Order Details).</p>
+      <p>💡 Nenhum dos dois traps aparece aqui: <code>Products → Categories</code> é uma relação N:1 comum (cada produto tem uma única categoria), então esse JOIN de dimensão não arrisca nada — o cuidado com <code>Stage</code> continua sendo o que protege exclusivamente a medida <code>line_total</code>, vinda da tabela que realmente explode (Order Details). Repare em <strong>Produce</strong>: "Manjimup Dried Apples" aparece em <strong>2 pedidos diferentes</strong> (10249 e 10250), mas o <code>COUNT(DISTINCT product_id)</code> conta esse produto <strong>uma única vez</strong> — exatamente o que se espera de uma contagem de produtos distintos, e só funciona porque a medida de receita e a contagem distinta protegida por <code>Stage</code> nunca se confundem.</p>
     </div>
 
     <div class="ctrl-l" style="margin-top:18px;">🌍 Um terceiro corte, com a última tabela que faltava: receita por país do cliente</div>
@@ -856,7 +889,7 @@ footer a:hover{color:var(--accent);}
 
     <div class="highlight-box">
       <div class="highlight-title">As 8 tabelas, um único case</div>
-      <p><code>Orders</code> e <code>Order Details</code> alimentam a Bridge com medidas protegidas por <code>Stage</code>; <code>EmployeeTerritories</code> alimenta a Bridge com um relacionamento puro, sem medida; <code>Employees</code>, <code>Customers</code>, <code>Products</code>, <code>Categories</code> e <code>Territories</code> entram como dimensões N:1 comuns, decorando chaves com nomes legíveis — nunca arriscando um trap, porque nenhuma delas "explode" a granularidade da Bridge. Três perguntas de negócio completamente diferentes (por funcionário, por categoria, por país), <strong>zero</strong> tabelas novas entre uma e outra.</p>
+      <p><code>Orders</code> e <code>Order Details</code> alimentam a Bridge com medidas protegidas por <code>Stage</code>; <code>EmployeeTerritories</code> alimenta a Bridge com um relacionamento puro, sem medida; <code>Employees</code>, <code>Customers</code>, <code>Products</code>, <code>Categories</code> e <code>Territories</code> entram como dimensões N:1 comuns, decorando chaves com nomes legíveis — nunca arriscando um trap, porque nenhuma delas "explode" a granularidade da Bridge. Quatro perguntas de negócio completamente diferentes (por funcionário, por pedido, por categoria, por país), <strong>zero</strong> tabelas novas entre uma e outra.</p>
     </div>
   </section>
 
